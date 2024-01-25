@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { 
+  font-family: 'Bender'; 
+  src: url('./assets//bender.regular.otf') format('opentype'); 
+} 
+
+body {
+    height: 100vh;
+    background-color: black;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Bender';
+    
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 2rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 2rem;
+    background: #363131; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 2rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
