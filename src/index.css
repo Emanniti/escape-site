@@ -38,3 +38,28 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+  .node__root > circle {
+    fill: red;
+    display: none;
+  }
+  
+  .node__branch > circle {
+    fill: yellow;
+  }
+  
+  .node__leaf > circle {
+    fill: green;
+    /* Let's also make the radius of leaf nodes larger */
+    r: 100;
+  }
+
+  .custom-link{
+    stroke: red !important;
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .special-link{
+    display: none;
+  }

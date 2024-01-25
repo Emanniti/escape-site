@@ -186,8 +186,8 @@ function FleaMarket() {
             onChange={(e) => setNomeItem(e.target.value)}
             className="max-w-[300px]"
             type="email"
-            label="Oggetto"
-            placeholder="Inserisci nome oggetto"
+            label="Item"
+            placeholder="Item Name"
           />
           <Button
             isClearable
@@ -197,7 +197,7 @@ function FleaMarket() {
             className="mt-1"
             size="lg"
           >
-            Cerca
+            Search
           </Button>
         </div>
         <Switch
@@ -230,34 +230,29 @@ function FleaMarket() {
           aria-label="Example static collection table"
         >
           <TableHeader>
-            <TableColumn width={250} allowsSorting>IMMAGINE</TableColumn>
-            <TableColumn width={300} allowsSorting>NOME</TableColumn>
-            <TableColumn allowsSorting>WIKI</TableColumn>
+            <TableColumn width={250} allowsSorting>Item</TableColumn>
+            <TableColumn width={300} allowsSorting>Name</TableColumn>
+            <TableColumn allowsSorting>Wiki</TableColumn>
             <TableColumn allowsSorting>24h AVG Price</TableColumn>
             <TableColumn allowsSorting>Per Slot</TableColumn>
             <TableColumn allowsSorting className="text-center">Sell To Trader</TableColumn>
             {advancedMode ? (
-              <TableColumn allowsSorting className="text-center">Prezzo piu' basso</TableColumn>
+              <TableColumn allowsSorting className="text-center">Lowest Price</TableColumn>
             ) : (
               <TableColumn allowsSorting className="hidden"></TableColumn>
             )}
             {advancedMode ? (
-              <TableColumn allowsSorting className="text-center">Ultime 48h</TableColumn>
+              <TableColumn allowsSorting className="text-center">Last 48h</TableColumn>
             ) : (
               <TableColumn allowsSorting className="hidden"></TableColumn>
             )}
             {advancedMode ? (
-              <TableColumn allowsSorting className="text-center">Ultime 48h %</TableColumn>
+              <TableColumn allowsSorting className="text-center">Last 48h %</TableColumn>
             ) : (
               <TableColumn allowsSorting className="hidden"></TableColumn>
             )}
             {advancedMode ? (
-              <TableColumn allowsSorting className="text-center">Peso</TableColumn>
-            ) : (
-              <TableColumn allowsSorting className="hidden"></TableColumn>
-            )}
-            {advancedMode ? (
-              <TableColumn allowsSorting className="text-center">Categorie</TableColumn>
+              <TableColumn allowsSorting className="text-center">Weigth</TableColumn>
             ) : (
               <TableColumn allowsSorting className="hidden"></TableColumn>
             )}
@@ -289,7 +284,7 @@ function FleaMarket() {
                           Wiki
                         </Link>
                       </TableCell>
-                      <TableCell className="text-left font-bold">
+                      <TableCell className="text-left">
                         {item.avg24hPrice === 0 ? "Prezzo non disponibile" : item.avg24hPrice.toLocaleString() + "₽"}
                       </TableCell>
                       <TableCell className="text-left">{handlePricePerSlot(item.width, item.height, item.avg24hPrice)}</TableCell>
@@ -310,7 +305,6 @@ function FleaMarket() {
                         <TableCell className="hidden"></TableCell>
                       )}
                       {advancedMode ? <TableCell>{item.weight} Kg</TableCell> : <TableCell className="hidden"></TableCell>}
-                      {advancedMode ? <TableCell>Categorie</TableCell> : <TableCell className="hidden"></TableCell>}
                     </TableRow>
                   );
                 })

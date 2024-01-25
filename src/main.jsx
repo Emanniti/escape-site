@@ -6,6 +6,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ErrorPage from "./Components/Routes/ErrorPage.jsx";
 import EscapeHome from "./Components/EscapeHome.jsx";
 import EscapeAmmo from "./Components/EscapeAmmo.jsx";
+// import QuestHome from "./Components/Quests/QuestHome.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,12 @@ const router = createBrowserRouter([
     element: <EscapeAmmo />,
     errorElement: <ErrorPage />,
   },
+  // {
+  //   path: "/questHome",
+  //   element: <QuestHome />,
+  //   errorElement: <ErrorPage />,
+  // },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

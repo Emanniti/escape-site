@@ -1,8 +1,26 @@
 import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, Image, Divider } from "@nextui-org/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  Button,
+  Image,
+  // Dropdown,
+  // DropdownTrigger,
+  // DropdownMenu,
+  // DropdownItem,
+  // DropdownSection,
+} from "@nextui-org/react";
 import EscapeLogo from "../assets/pngimg.com - escape_from_tarkov_PNG20.png";
 import { Fragment, useEffect, useState } from "react";
 import { formatHMS } from "./Utils/utils";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
+import { ImTree } from "react-icons/im";
+import { FaShoppingCart } from "react-icons/fa";
+import { GiAmmoBox } from "react-icons/gi";
 
 const tarkovRatio = 7;
 
@@ -44,6 +62,7 @@ export function Scroller({ isLeft, time }) {
 
 function NavBarSite() {
   const [time, setTime] = useState(new Date());
+  const [openMenu, setOpenMenu] = useState(false);
   useEffect(() => {
     setInterval(() => {
       setTime(new Date());
@@ -57,25 +76,48 @@ function NavBarSite() {
           <Image width={100} alt="NextUI hero Image" src={EscapeLogo} />
           <p className="font-bold text-inherit text-3xl text-white">Escape Market</p>
         </NavbarBrand>
-        <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarContent className="hidden sm:flex gap-1" justify="center">
           <NavbarItem>
             <Link color="foreground" href="/">
-              Flea Market
+              <Button startContent={<FaShoppingCart />} variant="light">
+                Flea Market
+              </Button>
             </Link>
           </NavbarItem>
           <NavbarItem>
             <Link color="foreground" href="/ammo">
-              Ammo
+              <Button startContent={<GiAmmoBox />} variant="light">
+                Ammo
+              </Button>
             </Link>
           </NavbarItem>
           {/* <NavbarItem>
             <Link color="foreground" href="#">
-              About
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="#">
-              Supporto
+              <Dropdown className="-mt-3 bg-slate-900" isOpen={openMenu}>
+                <DropdownTrigger>
+                  <Button
+                    onMouseEnter={() => setOpenMenu(true)}
+                    onMouseLeave={() => setOpenMenu(false)}
+                    endContent={openMenu ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                    variant="light"
+                  >
+                    Quest
+                  </Button>
+                </DropdownTrigger>
+                <DropdownMenu
+                  onMouseEnter={() => setOpenMenu(true)}
+                  onMouseLeave={() => setOpenMenu(false)}
+                  variant="light"
+                  aria-label="Static Actions"
+                >
+                  <DropdownSection aria-label="Profile & Actions">
+                    <DropdownItem href="questHome" key="new" startContent={<ImTree className="text-lg" />}>
+                      Quest List
+                    </DropdownItem>
+                    <DropdownItem key="copy">Copy link</DropdownItem>
+                  </DropdownSection>
+                </DropdownMenu>
+              </Dropdown>
             </Link>
           </NavbarItem> */}
         </NavbarContent>
