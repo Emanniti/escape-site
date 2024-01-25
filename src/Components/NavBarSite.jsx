@@ -68,7 +68,7 @@ function NavBarSite() {
               Ammo
             </Link>
           </NavbarItem>
-          <NavbarItem>
+          {/* <NavbarItem>
             <Link color="foreground" href="#">
               About
             </Link>
@@ -77,7 +77,7 @@ function NavBarSite() {
             <Link color="foreground" href="#">
               Supporto
             </Link>
-          </NavbarItem>
+          </NavbarItem> */}
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">

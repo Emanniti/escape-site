@@ -21,9 +21,9 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <main className="dark text-foreground bg-background">
-    <NextUIProvider>
+  <NextUIProvider>
+    <main className="dark text-foreground bg-background">
       <RouterProvider router={router} />
-    </NextUIProvider>
-  </main>
+    </main>
+  </NextUIProvider>
 );

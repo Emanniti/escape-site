@@ -2,11 +2,13 @@ import axios from "axios";
 import NavBarSite from "./NavBarSite";
 import { useEffect, useState } from "react";
 import React from "react";
-import { Accordion, AccordionItem, Avatar, Input, Tooltip } from "@nextui-org/react";
+import { Accordion, AccordionItem, Avatar, Button, Input, Tooltip, useDisclosure } from "@nextui-org/react";
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from "@nextui-org/react";
 import { GiPayMoney } from "react-icons/gi";
 import { GiReceiveMoney } from "react-icons/gi";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
+import ModaleConfrontaAmmo from "./AmmoComponents/ModaleConfrontaAmmo";
+import { ITEM_AMMO_ACCORDION } from "./constants";
 
 function EscapeAmmo() {
   const [itemCercato, setItemCercato] = useState({});
@@ -14,33 +16,9 @@ function EscapeAmmo() {
   const [ammoCercata, setAmmoCercata] = useState("");
   const [filteredData, setFilteredData] = useState([]);
   const [debouncedAmmoCercata, setDebouncedAmmoCercata] = useState("");
-  const itemAperti = [
-    "0",
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "11",
-    "12",
-    "13",
-    "14",
-    "15",
-    "16",
-    "17",
-    "18",
-    "19",
-    "20",
-    "21",
-    "22",
-    "23",
-    "24",
-  ];
+  const [selectedAmmo, setSelectedAmmo] = useState([]);
+  const [itemAperti, setItemAperti] = useState(ITEM_AMMO_ACCORDION);
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   async function searchItem() {
     try {
@@ -128,6 +106,7 @@ function EscapeAmmo() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
+      setSelectedAmmo([]);
       setDebouncedAmmoCercata(ammoCercata);
     }, 500); // Imposta il ritardo desiderato in millisecondi
 
@@ -176,11 +155,21 @@ function EscapeAmmo() {
     }
   }
 
+  function handleMultiSelectAmmo(params) {
+    const oggettoPresente = selectedAmmo.find((oggetto) => oggetto.item.name === params.item.name);
+    if (!oggettoPresente) {
+      setSelectedAmmo((prevArray) => [...prevArray, params]);
+    } else {
+      setSelectedAmmo(selectedAmmo.filter((item) => item.item.name !== params.item.name));
+    }
+  }
+  console.log(selectedAmmo);
+
   return (
     <>
       <NavBarSite />
       <div className="p-5 ">
-        <div className="p-2">
+        <div className="p-2 flex justify-between">
           <Input
             onChange={(e) => setAmmoCercata(e.target.value)}
             type="text"
@@ -190,11 +179,42 @@ function EscapeAmmo() {
             label="Ammo"
             placeholder="Enter your ammo name"
           />
+          <div />
+          <div className="p-2 gap-3 flex flex-nowrap">
+            <Button
+              color="warning"
+              onClick={(event) => {
+                setItemAperti([]);
+                setSelectedAmmo([]);
+              }}
+            >
+              Hide all
+            </Button>
+            <Button
+              color="warning"
+              onClick={(event) => {
+                setItemAperti(ITEM_AMMO_ACCORDION);
+              }}
+            >
+              Expand All
+            </Button>
+
+            {selectedAmmo.length > 1 ? (
+              <Button color="warning" onPress={onOpen}>
+                CONFRONTA
+              </Button>
+            ) : null}
+          </div>
         </div>
         {debouncedAmmoCercata !== "" ? (
-          <Table color="warning" selectionMode="multiple" aria-label="Example static collection table">
+          <Table
+            showSelectionCheckboxes={false}
+            selectionMode="multiple"
+            color="warning"
+            aria-label="Example static collection table"
+          >
             <TableHeader>
-              <TableColumn>#</TableColumn>
+              <TableColumn>IMAGE</TableColumn>
               <TableColumn>NAME</TableColumn>
               <TableColumn>BUY</TableColumn>
               <TableColumn>SELL</TableColumn>
@@ -212,7 +232,7 @@ function EscapeAmmo() {
               {filteredData.length > 0
                 ? filteredData.map((munizione, munizioneIndex) => {
                     return (
-                      <TableRow key={`${munizioneIndex} singleTable`}>
+                      <TableRow onClick={() => handleMultiSelectAmmo(munizione)} key={`${munizioneIndex} singleTable`}>
                         <TableCell width={40}>
                           <Avatar radius="none" src={munizione.item.gridImageLink} />
                         </TableCell>
@@ -286,14 +306,26 @@ function EscapeAmmo() {
             </TableBody>
           </Table>
         ) : (
-          <Accordion defaultExpandedKeys={itemAperti} variant="splitted" isCompact selectionMode="multiple">
+          <Accordion
+            onSelectionChange={setItemAperti}
+            selectedKeys={itemAperti}
+            variant="splitted"
+            isCompact
+            selectionMode="multiple"
+          >
             {itemCercato[0] !== undefined
               ? itemCercato.map((item, index) => {
                   return (
                     <AccordionItem key={index} className=" p-5" title={item.categoria}>
-                      <Table color="warning" selectionMode="multiple" aria-label="Example static collection table">
+                      <Table
+                        disabledBehavior="all"
+                        color="warning"
+                        selectionMode="multiple"
+                        showSelectionCheckboxes={false}
+                        aria-label="Example static collection table"
+                      >
                         <TableHeader>
-                          <TableColumn>#</TableColumn>
+                          <TableColumn>IMAGE</TableColumn>
                           <TableColumn>NAME</TableColumn>
                           <TableColumn>BUY</TableColumn>
                           <TableColumn>SELL</TableColumn>
@@ -309,7 +341,7 @@ function EscapeAmmo() {
                         </TableHeader>
                         <TableBody>
                           {item.oggetti.map((munizione, munizioneIndex) => (
-                            <TableRow key={munizioneIndex}>
+                            <TableRow onClick={() => handleMultiSelectAmmo(munizione)} key={munizioneIndex}>
                               <TableCell width={40}>
                                 <Avatar radius="none" src={munizione.item.gridImageLink} />
                               </TableCell>
@@ -387,6 +419,12 @@ function EscapeAmmo() {
           </Accordion>
         )}
       </div>
+      <ModaleConfrontaAmmo
+        onOpenChange={onOpenChange}
+        handleRecoilVisualize={handleRecoilVisualize}
+        selectedAmmo={selectedAmmo}
+        isOpen={isOpen}
+      />
     </>
   );
 }
