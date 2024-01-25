@@ -289,7 +289,7 @@ function FleaMarket() {
                           Wiki
                         </Link>
                       </TableCell>
-                      <TableCell className="text-left font-bold">
+                      <TableCell className="text-left">
                         {item.avg24hPrice === 0 ? "Prezzo non disponibile" : item.avg24hPrice.toLocaleString() + "₽"}
                       </TableCell>
                       <TableCell className="text-left">{handlePricePerSlot(item.width, item.height, item.avg24hPrice)}</TableCell>
