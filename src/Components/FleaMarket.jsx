@@ -32,7 +32,7 @@ function FleaMarket() {
 
   async function searchItem() {
     try {
-      setPage;
+      setPage(1);
       setLoading(true);
       const response = await axios.post(
         "https://api.tarkov.dev/graphql",

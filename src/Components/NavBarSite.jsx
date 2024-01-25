@@ -60,7 +60,12 @@ function NavBarSite() {
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
             <Link color="foreground" href="/">
-              Home
+              Flea Market
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="/ammo">
+              Ammo
             </Link>
           </NavbarItem>
           <NavbarItem>
