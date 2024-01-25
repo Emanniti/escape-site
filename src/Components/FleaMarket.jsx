@@ -27,7 +27,7 @@ function FleaMarket() {
   const [itemSelezionato, setItemSelezionato] = useState("");
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
-  const [advancedMode, setAdvancedMode] = useState(true);
+  const [advancedMode, setAdvancedMode] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   async function searchItem() {
@@ -202,7 +202,6 @@ function FleaMarket() {
         </div>
         <Switch
           onChange={() => setAdvancedMode(!advancedMode)}
-          defaultSelected
           size="lg"
           color="success"
           startContent={<FaPowerOff />}

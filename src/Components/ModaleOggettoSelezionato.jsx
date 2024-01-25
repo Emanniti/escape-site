@@ -130,7 +130,7 @@ function ModaleOggettoSelezionato(props) {
 
   return (
     <>
-      <Modal scrollBehavior="inside" className="bg-zinc-950" size={"5xl"} isOpen={props.isOpen} onClose={props.onClose}>
+      <Modal scrollBehavior="outside" className="bg-zinc-950" size={"5xl"} isOpen={props.isOpen} onClose={props.onClose}>
         <ModalContent className="p-5">
           {loading ? (
             <Spinner label="Caricamento..." color="warning" labelColor="warning" />
