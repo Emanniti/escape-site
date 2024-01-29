@@ -7,11 +7,11 @@ import {
   Link,
   Button,
   Image,
-  // Dropdown,
-  // DropdownTrigger,
-  // DropdownMenu,
-  // DropdownItem,
-  // DropdownSection,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  DropdownSection,
 } from "@nextui-org/react";
 import EscapeLogo from "../assets/pngimg.com - escape_from_tarkov_PNG20.png";
 import { Fragment, useEffect, useState } from "react";
@@ -21,6 +21,8 @@ import { IoIosArrowUp } from "react-icons/io";
 import { ImTree } from "react-icons/im";
 import { FaShoppingCart } from "react-icons/fa";
 import { GiAmmoBox } from "react-icons/gi";
+import { FaToolbox } from "react-icons/fa";
+
 
 const tarkovRatio = 7;
 
@@ -91,7 +93,7 @@ function NavBarSite() {
               </Button>
             </Link>
           </NavbarItem>
-          {/* <NavbarItem>
+          <NavbarItem>
             <Link color="foreground" href="#">
               <Dropdown className="-mt-3 bg-slate-900" isOpen={openMenu}>
                 <DropdownTrigger>
@@ -114,12 +116,14 @@ function NavBarSite() {
                     <DropdownItem href="questHome" key="new" startContent={<ImTree className="text-lg" />}>
                       Quest List
                     </DropdownItem>
-                    <DropdownItem key="copy">Copy link</DropdownItem>
+                    <DropdownItem href="questItems" key="copy" startContent={<FaToolbox className="text-lg" />}>
+                      Quest Items
+                    </DropdownItem>
                   </DropdownSection>
                 </DropdownMenu>
               </Dropdown>
             </Link>
-          </NavbarItem> */}
+          </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
