@@ -182,6 +182,7 @@ function EscapeAmmo() {
           <div />
           <div className="p-2 gap-3 flex flex-nowrap">
             <Button
+              variant="faded" 
               color="warning"
               onClick={(event) => {
                 setItemAperti([]);
@@ -191,6 +192,7 @@ function EscapeAmmo() {
               Hide all
             </Button>
             <Button
+              variant="faded" 
               color="warning"
               onClick={(event) => {
                 setItemAperti(ITEM_AMMO_ACCORDION);

@@ -190,9 +190,9 @@ function FleaMarket() {
             placeholder="Item Name"
           />
           <Button
-            isClearable
             isDisabled={nomeItem === "" ? true : false}
             onClick={() => searchItem()}
+            variant="faded" 
             color="warning"
             className="mt-1"
             size="lg"
@@ -230,29 +230,43 @@ function FleaMarket() {
           aria-label="Example static collection table"
         >
           <TableHeader>
-            <TableColumn width={250} allowsSorting>Item</TableColumn>
-            <TableColumn width={300} allowsSorting>Name</TableColumn>
+            <TableColumn width={250} allowsSorting>
+              Item
+            </TableColumn>
+            <TableColumn width={300} allowsSorting>
+              Name
+            </TableColumn>
             <TableColumn allowsSorting>Wiki</TableColumn>
             <TableColumn allowsSorting>24h AVG Price</TableColumn>
             <TableColumn allowsSorting>Per Slot</TableColumn>
-            <TableColumn allowsSorting className="text-center">Sell To Trader</TableColumn>
+            <TableColumn allowsSorting className="text-center">
+              Sell To Trader
+            </TableColumn>
             {advancedMode ? (
-              <TableColumn allowsSorting className="text-center">Lowest Price</TableColumn>
+              <TableColumn allowsSorting className="text-center">
+                Lowest Price
+              </TableColumn>
             ) : (
               <TableColumn allowsSorting className="hidden"></TableColumn>
             )}
             {advancedMode ? (
-              <TableColumn allowsSorting className="text-center">Last 48h</TableColumn>
+              <TableColumn allowsSorting className="text-center">
+                Last 48h
+              </TableColumn>
             ) : (
               <TableColumn allowsSorting className="hidden"></TableColumn>
             )}
             {advancedMode ? (
-              <TableColumn allowsSorting className="text-center">Last 48h %</TableColumn>
+              <TableColumn allowsSorting className="text-center">
+                Last 48h %
+              </TableColumn>
             ) : (
               <TableColumn allowsSorting className="hidden"></TableColumn>
             )}
             {advancedMode ? (
-              <TableColumn allowsSorting className="text-center">Weigth</TableColumn>
+              <TableColumn allowsSorting className="text-center">
+                Weigth
+              </TableColumn>
             ) : (
               <TableColumn allowsSorting className="hidden"></TableColumn>
             )}
