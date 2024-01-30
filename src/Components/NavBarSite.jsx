@@ -26,6 +26,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { GiAmmoBox } from "react-icons/gi";
 import { FaToolbox } from "react-icons/fa";
 import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect";
+import { FaTableList } from "react-icons/fa6";
 
 const tarkovRatio = 7;
 
@@ -119,11 +120,14 @@ function NavBarSite() {
                     aria-label="Static Actions"
                   >
                     <DropdownSection aria-label="Profile & Actions">
-                      <DropdownItem href="questHome" key="new" startContent={<ImTree className="text-lg" />}>
+                      <DropdownItem href="questHome" key="new" startContent={<FaTableList className="text-lg" />}>
                         Quest List
                       </DropdownItem>
                       <DropdownItem href="questItems" key="copy" startContent={<FaToolbox className="text-lg" />}>
                         Quest Items
+                      </DropdownItem>
+                      <DropdownItem href="questTree" key="copy" startContent={<ImTree className="text-lg" />}>
+                        Quest Tree
                       </DropdownItem>
                     </DropdownSection>
                   </DropdownMenu>

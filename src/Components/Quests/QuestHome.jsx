@@ -127,7 +127,7 @@ function QuestHome() {
               </CheckboxGroup>
             </AccordionItem>
           </Accordion>
-          <Tooltip showArrow={true} content={isCrescent ? "Increasing" : "Decreasing"}>
+          <Tooltip showArrow={true} content={isCrescent ? "Decreasing" : "Increasing"}>
             <Button
               onClick={() => setIsCrescent(!isCrescent)}
               className="min-h-[60px]"
