@@ -9,6 +9,7 @@ import EscapeAmmo from "./Components/EscapeAmmo.jsx";
 import QuestHome from "./Components/Quests/QuestHome.jsx";
 import QuestItems from "./Components/Quests/QuestItems.jsx";
 import QuestTree from "./Components/Quests/QuestTree.jsx";
+import MapsHome from "./Components/Maps/MapsHome.jsx";
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
   {
     path: "/questTree",
     element: <QuestTree />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/maps",
+    element: <MapsHome />,
     errorElement: <ErrorPage />,
   },
 

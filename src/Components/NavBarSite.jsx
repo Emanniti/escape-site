@@ -25,8 +25,9 @@ import { ImTree } from "react-icons/im";
 import { FaShoppingCart } from "react-icons/fa";
 import { GiAmmoBox } from "react-icons/gi";
 import { FaToolbox } from "react-icons/fa";
-import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect";
+import { BrowserView, MobileView} from "react-device-detect";
 import { FaTableList } from "react-icons/fa6";
+import { IoMapSharp } from "react-icons/io5";
 
 const tarkovRatio = 7;
 
@@ -97,6 +98,13 @@ function NavBarSite() {
               <Link color="foreground" href="/ammo">
                 <Button startContent={<GiAmmoBox />} variant="light">
                   Ammo
+                </Button>
+              </Link>
+            </NavbarItem>
+            <NavbarItem>
+              <Link color="foreground" href="/maps">
+                <Button startContent={<IoMapSharp />} variant="light">
+                  Maps
                 </Button>
               </Link>
             </NavbarItem>
