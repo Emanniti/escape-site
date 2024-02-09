@@ -137,6 +137,21 @@ import SewerExtraction from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/Se
 import SewerRiverExtraction from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/SewerRiverExtraction.webp'
 import StreetsStylobateElevatorExtract from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/StreetsStylobateElevatorExtract.webp'
 import VentilationShaftExtraction from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/VentilationShaftExtraction.webp'
+//LIGHTHOUSE
+import LightHouse3D from '../Maps/Assets/LightHouse/Re3mrLighthouseVerticalDay-min.webp'
+import LightHouse3DIso from '../Maps/Assets/LightHouse/Re3mrLighthouseIsometricDay-min.webp'
+import LightHouse2D from '../Maps/Assets/LightHouse/Jindouz_Lighthouse_Map_V1.webp'
+import LightHouseArmoredTrain from '../Maps/Assets/LightHouse/LightHouseExtracts/Lighthouse_-_Armored_train.webp'
+import Hideout_under_the_landing_stage from '../Maps/Assets/LightHouse/LightHouseExtracts/Hideout_under_the_landing_stage.webp'
+import Industrial_zone_gates from '../Maps/Assets/LightHouse/LightHouseExtracts/Industrial_zone_gates.webp'
+import Lighthouse_Mountain_pass from '../Maps/Assets/LightHouse/LightHouseExtracts/Lighthouse_-_Mountain_pass.webp'
+import Lighthouse_Northern_checkpoint from '../Maps/Assets/LightHouse/LightHouseExtracts/Lighthouse_-_Northern_checkpoint.webp'
+import Lighthouse_Path_to_Shoreline from '../Maps/Assets/LightHouse/LightHouseExtracts/Lighthouse_-_Path_to_Shoreline.webp'
+import Lighthousecar from '../Maps/Assets/LightHouse/LightHouseExtracts/Lighthousecar.webp'
+import Scav_hideout_at_the_grotto from '../Maps/Assets/LightHouse/LightHouseExtracts/Scav_hideout_at_the_grotto.webp'
+import LighthouseSideTunnelExtract from '../Maps/Assets/LightHouse/LightHouseExtracts/LighthouseSideTunnelExtract.webp'
+import Lighthouse_southern_road from '../Maps/Assets/LightHouse/LightHouseExtracts/Lighthouse_-_southern_road.webp'
+import Scav_Coastal_South from '../Maps/Assets/LightHouse/LightHouseExtracts/Scav_Coastal_South.webp'
 
 export const MAPS_GROUND_ZERO = [
     { id: 'gz', mapName: 'Ground Zero 2D', src: GroundZero, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
@@ -156,10 +171,10 @@ export const GROUND_ZERO_EXTRACTS = [
 ]
 
 export const MAPS_FACTORY = [
-    { id: 'ft', mapName: 'Factory 3D', src: Factory_3D_b_Johnny_Tushonka, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'ft', mapName: 'Factory Isometric Map', src: EFT_Factory_Map_12, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'ft', mapName: 'Factory 2D', src: Factory_loot, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'ft', mapName: 'Factory Ingame Map', src: Factory_Map_0, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'ft', mapName: 'Factory 3D', src: Factory_3D_b_Johnny_Tushonka, description: `The industrial estate and facilities of Chemical Plant No. 16 were rented out illegally to the TerraGroup corporation. During the advent of the Contract Wars, the plant became the scene of numerous firefights between BEAR and USEC that ultimately determined control over the industrial district of Tarkov. Later on, in the wake of the chaos, the plant facilities became a shelter for the remaining civilians, Scavs, and military operatives, including the scattered remains of the BEAR and USEC contingents.` },
+    { id: 'ft', mapName: 'Factory Isometric Map', src: EFT_Factory_Map_12, description: 'The industrial estate and facilities of Chemical Plant No. 16 were rented out illegally to the TerraGroup corporation. During the advent of the Contract Wars, the plant became the scene of numerous firefights between BEAR and USEC that ultimately determined control over the industrial district of Tarkov. Later on, in the wake of the chaos, the plant facilities became a shelter for the remaining civilians, Scavs, and military operatives, including the scattered remains of the BEAR and USEC contingents.' },
+    { id: 'ft', mapName: 'Factory 2D', src: Factory_loot, description: 'The industrial estate and facilities of Chemical Plant No. 16 were rented out illegally to the TerraGroup corporation. During the advent of the Contract Wars, the plant became the scene of numerous firefights between BEAR and USEC that ultimately determined control over the industrial district of Tarkov. Later on, in the wake of the chaos, the plant facilities became a shelter for the remaining civilians, Scavs, and military operatives, including the scattered remains of the BEAR and USEC contingents.' },
+    { id: 'ft', mapName: 'Factory Ingame Map', src: Factory_Map_0, description: 'The industrial estate and facilities of Chemical Plant No. 16 were rented out illegally to the TerraGroup corporation. During the advent of the Contract Wars, the plant became the scene of numerous firefights between BEAR and USEC that ultimately determined control over the industrial district of Tarkov. Later on, in the wake of the chaos, the plant facilities became a shelter for the remaining civilians, Scavs, and military operatives, including the scattered remains of the BEAR and USEC contingents.' },
 ]
 
 export const FACTORY_EXTRACTS = [
@@ -178,11 +193,11 @@ export const FACTORY_EXTRACTS = [
 ]
 
 export const MAPS_CUSTOMS = [
-    { id: 'cs', mapName: 'Customs 3D Map Day', src: Customs3D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'cs', mapName: 'Customs 3D Map Night', src: Customs3DDark, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'cs', mapName: 'Customs 2D Map', src: Customs2D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'cs', mapName: 'Customs 2D Map Dorms', src: CustomsDorms, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'cs', mapName: 'Customs Ingame Map - North bottom', src: CustomsIngame, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'cs', mapName: 'Customs 3D Map Day', src: Customs3D, description: 'A large area of industrial park land situated adjacent to the factory zone. The area houses a customs terminal, fuel storage facilities, offices, and dorms, as well as a variety of other infrastructure and buildings.' },
+    { id: 'cs', mapName: 'Customs 3D Map Night', src: Customs3DDark, description: 'A large area of industrial park land situated adjacent to the factory zone. The area houses a customs terminal, fuel storage facilities, offices, and dorms, as well as a variety of other infrastructure and buildings.' },
+    { id: 'cs', mapName: 'Customs 2D Map', src: Customs2D, description: 'A large area of industrial park land situated adjacent to the factory zone. The area houses a customs terminal, fuel storage facilities, offices, and dorms, as well as a variety of other infrastructure and buildings.' },
+    { id: 'cs', mapName: 'Customs 2D Map Dorms', src: CustomsDorms, description: 'A large area of industrial park land situated adjacent to the factory zone. The area houses a customs terminal, fuel storage facilities, offices, and dorms, as well as a variety of other infrastructure and buildings.' },
+    { id: 'cs', mapName: 'Customs Ingame Map - North bottom', src: CustomsIngame, description: 'A large area of industrial park land situated adjacent to the factory zone. The area houses a customs terminal, fuel storage facilities, offices, and dorms, as well as a variety of other infrastructure and buildings.' },
 ]
 
 export const CUSTOMS_EXTRACTS = [
@@ -219,10 +234,10 @@ export const CUSTOMS_EXTRACTS = [
 ]
 
 export const MAPS_INTERCHANGE = [
-    { id: 'it', mapName: 'Interchange 3D Map - North left', src: Interchange3D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'it', mapName: 'Interchange 2D Map', src: Interchange2D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'it', mapName: 'Interchange 2D Map Hidden Stashes', src: InterchangeStashes, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'it', mapName: 'Interchange Ingame Map - North bottom', src: InterchangeIngame, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'it', mapName: 'Interchange 3D Map - North left', src: Interchange3D, description: 'The South Interchange is a key transport location for the city. This strategic area connects the port and harbor with the industrial outskirts of Tarkov. Located in the center of the interchange is a huge ULTRA shopping mall which was used as the main base of operation for the EMERCOM evacuation.' },
+    { id: 'it', mapName: 'Interchange 2D Map', src: Interchange2D, description: 'The South Interchange is a key transport location for the city. This strategic area connects the port and harbor with the industrial outskirts of Tarkov. Located in the center of the interchange is a huge ULTRA shopping mall which was used as the main base of operation for the EMERCOM evacuation.' },
+    { id: 'it', mapName: 'Interchange 2D Map Hidden Stashes', src: InterchangeStashes, description: 'The South Interchange is a key transport location for the city. This strategic area connects the port and harbor with the industrial outskirts of Tarkov. Located in the center of the interchange is a huge ULTRA shopping mall which was used as the main base of operation for the EMERCOM evacuation.' },
+    { id: 'it', mapName: 'Interchange Ingame Map - North bottom', src: InterchangeIngame, description: 'The South Interchange is a key transport location for the city. This strategic area connects the port and harbor with the industrial outskirts of Tarkov. Located in the center of the interchange is a huge ULTRA shopping mall which was used as the main base of operation for the EMERCOM evacuation.' },
 ]
 
 export const INTERCHANGE_EXTRACTS = [
@@ -241,10 +256,10 @@ export const INTERCHANGE_EXTRACTS = [
 ]
 
 export const MAPS_WOODS = [
-    { id: 'ws', mapName: 'Woods 3D Map', src: Woods3D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'ws', mapName: 'Woods 2D Map', src: Woods2D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'ws', mapName: 'Woods 2D Map', src: Woods2D2, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'ws', mapName: 'Woods Ingame Map', src: WoodsIngame, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'ws', mapName: 'Woods 3D Map', src: Woods3D, description: 'The Priozersky Natural Reserve recently became part of the state-protected wildlife reserves of the North Western Federal District.' },
+    { id: 'ws', mapName: 'Woods 2D Map', src: Woods2D, description: 'The Priozersky Natural Reserve recently became part of the state-protected wildlife reserves of the North Western Federal District.' },
+    { id: 'ws', mapName: 'Woods 2D Map', src: Woods2D2, description: 'The Priozersky Natural Reserve recently became part of the state-protected wildlife reserves of the North Western Federal District.' },
+    { id: 'ws', mapName: 'Woods Ingame Map', src: WoodsIngame, description: 'The Priozersky Natural Reserve recently became part of the state-protected wildlife reserves of the North Western Federal District.' },
 ]
 
 export const WOODS_EXTRACTS = [
@@ -271,12 +286,12 @@ export const WOODS_EXTRACTS = [
 ]
 
 export const MAPS_SHORELINE = [
-    { id: 'sh', mapName: 'Shoreline 3D Map Not yet updated for the latest expansion', src: Shoreline3D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'sh', mapName: 'Shoreline 3D Map Health Resort', src: ShorelineResort, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'sh', mapName: 'Shoreline 2D Map', src: Shoreline2D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'sh', mapName: 'Shoreline Isometric Map Health Resort', src: ShorelineIsometric, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'sh', mapName: 'Shoreline Ingame Map - North bottom', src: ShorelineIngame, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'sh', mapName: 'Shoreline Ingame Map Health Resort - North bottom', src: ShorelineIngameResort, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'sh', mapName: 'Shoreline 3D Map Not yet updated for the latest expansion', src: Shoreline3D, description: `The Shoreline area makes up a large part of the outskirts of Tarkov and is located next to the Port. The area houses a partially abandoned village, modern private housing, agricultural fields, long stretches of beach, a boating facility, gas station, weather station, and a cellular tower as well as other commercial facilities. Shoreline's main point of interest is the "Azure Coast" health resort which consists of several luxurious buildings and facilities. The resort is exclusively powered by a nearby hydroelectric power plant. The resort had previously been used as temporary accommodation for members of TerraGroup and the corporation's associated divisions in preparation for the evacuation of the Tarkov Port.`},
+    { id: 'sh', mapName: 'Shoreline 3D Map Health Resort', src: ShorelineResort, description: `The Shoreline area makes up a large part of the outskirts of Tarkov and is located next to the Port. The area houses a partially abandoned village, modern private housing, agricultural fields, long stretches of beach, a boating facility, gas station, weather station, and a cellular tower as well as other commercial facilities. Shoreline's main point of interest is the "Azure Coast" health resort which consists of several luxurious buildings and facilities. The resort is exclusively powered by a nearby hydroelectric power plant. The resort had previously been used as temporary accommodation for members of TerraGroup and the corporation's associated divisions in preparation for the evacuation of the Tarkov Port.` },
+    { id: 'sh', mapName: 'Shoreline 2D Map', src: Shoreline2D, description: `The Shoreline area makes up a large part of the outskirts of Tarkov and is located next to the Port. The area houses a partially abandoned village, modern private housing, agricultural fields, long stretches of beach, a boating facility, gas station, weather station, and a cellular tower as well as other commercial facilities. Shoreline's main point of interest is the "Azure Coast" health resort which consists of several luxurious buildings and facilities. The resort is exclusively powered by a nearby hydroelectric power plant. The resort had previously been used as temporary accommodation for members of TerraGroup and the corporation's associated divisions in preparation for the evacuation of the Tarkov Port.` },
+    { id: 'sh', mapName: 'Shoreline Isometric Map Health Resort', src: ShorelineIsometric, description: `The Shoreline area makes up a large part of the outskirts of Tarkov and is located next to the Port. The area houses a partially abandoned village, modern private housing, agricultural fields, long stretches of beach, a boating facility, gas station, weather station, and a cellular tower as well as other commercial facilities. Shoreline's main point of interest is the "Azure Coast" health resort which consists of several luxurious buildings and facilities. The resort is exclusively powered by a nearby hydroelectric power plant. The resort had previously been used as temporary accommodation for members of TerraGroup and the corporation's associated divisions in preparation for the evacuation of the Tarkov Port.` },
+    { id: 'sh', mapName: 'Shoreline Ingame Map - North bottom', src: ShorelineIngame, description: `The Shoreline area makes up a large part of the outskirts of Tarkov and is located next to the Port. The area houses a partially abandoned village, modern private housing, agricultural fields, long stretches of beach, a boating facility, gas station, weather station, and a cellular tower as well as other commercial facilities. Shoreline's main point of interest is the "Azure Coast" health resort which consists of several luxurious buildings and facilities. The resort is exclusively powered by a nearby hydroelectric power plant. The resort had previously been used as temporary accommodation for members of TerraGroup and the corporation's associated divisions in preparation for the evacuation of the Tarkov Port.` },
+    { id: 'sh', mapName: 'Shoreline Ingame Map Health Resort - North bottom', src: ShorelineIngameResort, description: `The Shoreline area makes up a large part of the outskirts of Tarkov and is located next to the Port. The area houses a partially abandoned village, modern private housing, agricultural fields, long stretches of beach, a boating facility, gas station, weather station, and a cellular tower as well as other commercial facilities. Shoreline's main point of interest is the "Azure Coast" health resort which consists of several luxurious buildings and facilities. The resort is exclusively powered by a nearby hydroelectric power plant. The resort had previously been used as temporary accommodation for members of TerraGroup and the corporation's associated divisions in preparation for the evacuation of the Tarkov Port.` },
 ]
 
 export const SHORELINE_EXTRACTS = [
@@ -300,10 +315,10 @@ export const SHORELINE_EXTRACTS = [
 ]
 
 export const MAPS_RESERVE = [
-    { id: 're', mapName: 'Reserve 3D Map', src: Reserve3D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 're', mapName: 'Reserve 2D Map', src: Reserve2D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 're', mapName: 'Reserve 2D Underground Map', src: Reserve2DUnderground, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 're', mapName: 'Reserve Ingame', src: ReserveIngame, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 're', mapName: 'Reserve 3D Map', src: Reserve3D, description: 'The secret Federal State Reserve Agency base that, according to urban legends, contains enough supplies to last for years: food, medications, and other resources, enough to survive an all-out nuclear war.' },
+    { id: 're', mapName: 'Reserve 2D Map', src: Reserve2D, description: 'The secret Federal State Reserve Agency base that, according to urban legends, contains enough supplies to last for years: food, medications, and other resources, enough to survive an all-out nuclear war.' },
+    { id: 're', mapName: 'Reserve 2D Underground Map', src: Reserve2DUnderground, description: 'The secret Federal State Reserve Agency base that, according to urban legends, contains enough supplies to last for years: food, medications, and other resources, enough to survive an all-out nuclear war.' },
+    { id: 're', mapName: 'Reserve Ingame', src: ReserveIngame, description: 'The secret Federal State Reserve Agency base that, according to urban legends, contains enough supplies to last for years: food, medications, and other resources, enough to survive an all-out nuclear war.' },
 ]
 
 export const RESERVE_EXTRACTS = [
@@ -334,9 +349,9 @@ export const RESERVE_EXTRACTS = [
 ]
 
 export const MAPS_STREETS = [
-    { id: 'st', mapName: 'Streets 3D Map', src: Streets3D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'st', mapName: 'Streets 2D Map', src: Streets2D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
-    { id: 'st', mapName: 'Streets 2D Map', src: Streets2D2, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'st', mapName: 'Streets 3D Map', src: Streets3D, description: 'Downtown Tarkov houses banks, malls, and hotels, as well as all the other amenities a thriving metropolis could have needed.' },
+    { id: 'st', mapName: 'Streets 2D Map', src: Streets2D, description: 'Downtown Tarkov houses banks, malls, and hotels, as well as all the other amenities a thriving metropolis could have needed.' },
+    { id: 'st', mapName: 'Streets 2D Map', src: Streets2D2, description: 'Downtown Tarkov houses banks, malls, and hotels, as well as all the other amenities a thriving metropolis could have needed.' },
 ]
 
 export const STREETS_EXTRACTS = [
@@ -352,10 +367,43 @@ export const STREETS_EXTRACTS = [
     { id: 'st', src: Klimov_trading_exfil, name: 'Klimov Shopping Mall Exfil', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: 'On the 1st floor of the eastern staircase in the Klimov shopping mall.' },
     { id: 'st', src: Near_arch_exfil, name: 'Near Kamchatskaya Arch', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: 'In the courtyard of the museum building.' },
     { id: 'st', src: StreetsPinewoodBasementExtract, name: 'Pinewood Basement (Co-Op)', faction: 'All', alwaysAvaiable: true, singleUse: false, requirements: `Scav + PMC`, notes: 'It the northeastern staircase of the Pinewood hotel.' },
-    { id: 'st', src: PrimorskyAveTaxiV, name: 'Primorsky Ave Taxi V-Ex', faction: 'PMC', alwaysAvaiable: false, singleUse: true, requirements: `5000 RUB per player Maxium of 4 players`, notes: `The fee amount is influenced by your Scav karma.
+    {
+        id: 'st', src: PrimorskyAveTaxiV, name: 'Primorsky Ave Taxi V-Ex', faction: 'PMC', alwaysAvaiable: false, singleUse: true, requirements: `5000 RUB per player Maxium of 4 players`, notes: `The fee amount is influenced by your Scav karma.
     There are border snipers beyond the vehicle.` },
     { id: 'st', src: SewerExtraction, name: 'Sewer Manhole', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
     { id: 'st', src: SewerRiverExtraction, name: 'Sewer River', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
     { id: 'st', src: StreetsStylobateElevatorExtract, name: 'Stylobate Building Elevator', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: 'Behind the bar on the 3rd floor of the Beluga restaurant.' },
     { id: 'st', src: VentilationShaftExtraction, name: 'Ventilation Shaft', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+]
+
+export const MAPS_LIGHT = [
+    { id: 'lt', mapName: 'Light 3D Map', src: LightHouse3D, description: 'The lighthouse at Cape Dalniy was an important strategic object on the way to Tarkov. During Contract Wars, it was the main entry point for USEC units and served as their base of operations. After the conflict, Scavs took a fancy to this place, until the old owners returned, who decided to stay in Tarkov and establish their own order.' },
+    { id: 'lt', mapName: 'Light 3D Map - North top left', src: LightHouse3DIso, description: 'The lighthouse at Cape Dalniy was an important strategic object on the way to Tarkov. During Contract Wars, it was the main entry point for USEC units and served as their base of operations. After the conflict, Scavs took a fancy to this place, until the old owners returned, who decided to stay in Tarkov and establish their own order.' },
+    { id: 'lt', mapName: 'Light 2D Map', src: LightHouse2D, description: 'The lighthouse at Cape Dalniy was an important strategic object on the way to Tarkov. During Contract Wars, it was the main entry point for USEC units and served as their base of operations. After the conflict, Scavs took a fancy to this place, until the old owners returned, who decided to stay in Tarkov and establish their own order.' },
+]
+
+export const LIGHT_EXTRACTS = [
+    {
+        id: 'lt', src: LightHouseArmoredTrain, name: 'Armored Train', faction: 'All', alwaysAvaiable: true, singleUse: false, requirements: '-', notes: `Arrives between 20 and 15 minutes left in the raid.
+    Honks twice on arrival.
+    Stays for 7 min.
+    Honks once 1 min before departure.
+    Honks twice on closing doors.` },
+    { id: 'lt', src: Hideout_under_the_landing_stage, name: 'Hideout Under the Landing Stage', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'lt', src: Cardinal_parking, name: 'Cardinal Apartment Complex Parking', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'lt', src: Industrial_zone_gates, name: 'Industrial Zone Gates', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    {
+        id: 'lt', src: Lighthouse_Mountain_pass, name: 'Mountain Pass', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `Red Rebel ice pick
+    Paracord
+    No armor vest equipped`, notes: '-'
+    },
+    { id: 'lt', src: Lighthouse_Northern_checkpoint, name: 'Northern Checkpoint', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'lt', src: Lighthouse_Path_to_Shoreline, name: 'Path to Shoreline', faction: 'All', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    {
+        id: 'lt', src: Lighthousecar, name: 'Road to Military Base V-Ex	', faction: 'PMC', alwaysAvaiable: false, singleUse: true, requirements: `5000 RUB per player`, notes: `The fee amount is influenced by your Scav karma.
+    There are border snipers beyond the vehicle.` },
+    { id: 'lt', src: Scav_hideout_at_the_grotto, name: 'Scav Hideout at the Grotto', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'lt', src: LighthouseSideTunnelExtract, name: 'Side Tunnel (Co-Op)', faction: 'All', alwaysAvaiable: true, singleUse: false, requirements: `Scav + PMC`, notes: 'The extraction zone is inside a room to the left after entering the tunnel.' },
+    { id: 'lt', src: Lighthouse_southern_road, name: 'Southern Road', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'lt', src: Scav_Coastal_South, name: 'Southern Road Landslide', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
 ]

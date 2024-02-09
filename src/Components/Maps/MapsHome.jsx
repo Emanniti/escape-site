@@ -2,7 +2,7 @@ import NavBarSite from "../NavBarSite";
 import { Button, Card, CardBody, CardFooter, CardHeader, Divider, Image, useDisclosure } from "@nextui-org/react";
 import { useState } from "react";
 import ModalMap from "./ModalMap";
-import { MAPS_CUSTOMS, MAPS_FACTORY, MAPS_GROUND_ZERO, MAPS_INTERCHANGE, MAPS_RESERVE, MAPS_SHORELINE, MAPS_STREETS, MAPS_WOODS } from "./constants";
+import { MAPS_CUSTOMS, MAPS_FACTORY, MAPS_GROUND_ZERO, MAPS_INTERCHANGE, MAPS_LIGHT, MAPS_RESERVE, MAPS_SHORELINE, MAPS_STREETS, MAPS_WOODS } from "./constants";
 
 function MapsHome() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -25,7 +25,7 @@ function MapsHome() {
         <Card key={index} className="py-4 max-w-[300px]">
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
             <p className="text-large uppercase font-bold">{map.mapName}</p>
-            <small className="text-default-500 text-ellipsis overflow-hidden">{map.description}</small>
+            {/* <small className="text-default-500 text-ellipsis overflow-hidden">{map.description}</small> */}
           </CardHeader>
           <CardBody className="overflow-visible py-2">
             <Image alt="Card background" className="object-cover rounded-xl" src={map.src} width={270} />
@@ -37,7 +37,7 @@ function MapsHome() {
               variant="faded"
               color="warning"
             >
-              Apri
+              Open
             </Button>
           </CardFooter>
         </Card>
@@ -56,6 +56,7 @@ function MapsHome() {
       {renderMapSection(MAPS_SHORELINE, 'Shoreline maps')}
       {renderMapSection(MAPS_RESERVE, 'Reserve maps')}
       {renderMapSection(MAPS_STREETS, 'Streets maps')}
+      {renderMapSection(MAPS_LIGHT, 'Lights maps')}
       <ModalMap
         isOpen={isOpen}
         onOpenChange={onOpenChange}

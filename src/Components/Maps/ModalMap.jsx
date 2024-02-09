@@ -15,7 +15,17 @@ import {
   TableRow,
 } from "@nextui-org/react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import { CUSTOMS_EXTRACTS, FACTORY_EXTRACTS, GROUND_ZERO_EXTRACTS, INTERCHANGE_EXTRACTS, RESERVE_EXTRACTS, SHORELINE_EXTRACTS, STREETS_EXTRACTS, WOODS_EXTRACTS } from "./constants";
+import {
+  CUSTOMS_EXTRACTS,
+  FACTORY_EXTRACTS,
+  GROUND_ZERO_EXTRACTS,
+  INTERCHANGE_EXTRACTS,
+  LIGHT_EXTRACTS,
+  RESERVE_EXTRACTS,
+  SHORELINE_EXTRACTS,
+  STREETS_EXTRACTS,
+  WOODS_EXTRACTS,
+} from "./constants";
 import { useEffect, useState } from "react";
 import { MdDone } from "react-icons/md";
 import { TiDelete } from "react-icons/ti";
@@ -43,6 +53,8 @@ function ModalMap(props) {
         return RESERVE_EXTRACTS;
       case "st":
         return STREETS_EXTRACTS;
+      case "lt":
+        return LIGHT_EXTRACTS;
 
       default:
         return [];
@@ -79,7 +91,13 @@ function ModalMap(props) {
                         selectedMap.map((map, index) => (
                           <TableRow key={index}>
                             <TableCell>
-                              <Image className="hover:scale-125" src={map.src} width={props.selectedId === "cs" || props.selectedId === "sh" || props.selectedId === "re" ? 300 : 1000} />
+                              <Image
+                                className="hover:scale-125"
+                                src={map.src}
+                                width={
+                                  props.selectedId === "cs" || props.selectedId === "sh" || props.selectedId === "re" ? 300 : 1000
+                                }
+                              />
                             </TableCell>
                             <TableCell>{map.name}</TableCell>
                             <TableCell>{map.faction}</TableCell>
@@ -98,7 +116,9 @@ function ModalMap(props) {
                 </div>
               </ModalBody>
               <ModalFooter>
-                <Button>Close</Button>
+                <Button color="warning" variant="ghost" onPress={onClose}>
+                  Close
+                </Button>
               </ModalFooter>
             </>
           )}
