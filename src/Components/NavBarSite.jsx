@@ -210,6 +210,13 @@ function NavBarSite() {
                 </Dropdown>
               </Link>
             </NavbarMenuItem>
+            <NavbarItem>
+              <Link color="foreground" href="/maps">
+                <Button startContent={<IoMapSharp />} variant="light">
+                  Maps
+                </Button>
+              </Link>
+            </NavbarItem>
           </NavbarMenu>
         </Navbar>
       </MobileView>
