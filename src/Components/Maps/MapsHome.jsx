@@ -56,7 +56,7 @@ function MapsHome() {
       {renderMapSection(MAPS_SHORELINE, 'Shoreline maps')}
       {renderMapSection(MAPS_RESERVE, 'Reserve maps')}
       {renderMapSection(MAPS_STREETS, 'Streets maps')}
-      {renderMapSection(MAPS_LIGHT, 'Lights maps')}
+      {renderMapSection(MAPS_LIGHT, 'Lightshouse maps')}
       <ModalMap
         isOpen={isOpen}
         onOpenChange={onOpenChange}

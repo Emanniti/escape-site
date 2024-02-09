@@ -95,7 +95,7 @@ function ModalMap(props) {
                                 className="hover:scale-125"
                                 src={map.src}
                                 width={
-                                  props.selectedId === "cs" || props.selectedId === "sh" || props.selectedId === "re" ? 300 : 1000
+                                  props.selectedId === "cs" || props.selectedId === "sh" || props.selectedId === "re" ? 300 : 2000
                                 }
                               />
                             </TableCell>
