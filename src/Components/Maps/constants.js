@@ -81,6 +81,62 @@ import Scav_bunker from '../Maps/Assets/Woods/WoodsExtracts/Scav_bunker.webp'
 import UN_Road from '../Maps/Assets/Woods/WoodsExtracts/UN_Road.webp'
 import ZB14 from '../Maps/Assets/Woods/WoodsExtracts/ZB-014.webp'
 import ZB16 from '../Maps/Assets/Woods/WoodsExtracts/ZB-016.webp'
+//SHORELINE
+import Shoreline3D from '../Maps/Assets/Shoreline/ShorelineQuestsRe3mr.webp'
+import Shoreline2D from '../Maps/Assets/Shoreline/Shoreline2DMapByMonkiUpdatedByJindouz.webp'
+import ShorelineResort from '../Maps/Assets/Shoreline/ShorelineResortRoomsByreemr.webp'
+import ShorelineIsometric from '../Maps/Assets/Shoreline/UNKSO_Shoreline_Resort_Loot_Map_VER_2.0.webp'
+import ShorelineIngame from '../Maps/Assets/Shoreline/Map_Shoreline.webp'
+import ShorelineIngameResort from '../Maps/Assets/Shoreline/Map_Shoreline_Resort.webp'
+import ShorelineAdminBasement from '../Maps/Assets/Shoreline/ShorelineExtracts/Adm_Basement.webp'
+import Shoreline_Climber from '../Maps/Assets/Shoreline/ShorelineExtracts/Shoreline_Climber%27s_Trail_Extraction.webp'
+import Rwing_Gym_Entrance from '../Maps/Assets/Shoreline/ShorelineExtracts/Rwing_Gym_Entrance.webp'
+import Lighthouse from '../Maps/Assets/Shoreline/ShorelineExtracts/Lighthouse.webp'
+import South_Fence_Passage from '../Maps/Assets/Shoreline/ShorelineExtracts/South_Fence_Passage.webp'
+import Path_to_Lighthouse from '../Maps/Assets/Shoreline/ShorelineExtracts/Path_to_Lighthouse.webp'
+import Pier_Boat from '../Maps/Assets/Shoreline/ShorelineExtracts/Pier_Boat.webp'
+import Road_at_Railbridge from '../Maps/Assets/Shoreline/ShorelineExtracts/Road_at_Railbridge.webp'
+import Road_To_Customs from '../Maps/Assets/Shoreline/ShorelineExtracts/Road_To_Customs.webp'
+import Shoreline_Road_to_North_V from '../Maps/Assets/Shoreline/ShorelineExtracts/Shoreline_Road_to_North_V-Ex_Extraction.webp'
+import Ruined_Road from '../Maps/Assets/Shoreline/ShorelineExtracts/Ruined_Road.webp'
+import ShorelineSmuggler from '../Maps/Assets/Shoreline/ShorelineExtracts/Smuggler%27s_Path_Extraction.webp'
+import Tunnel from '../Maps/Assets/Shoreline/ShorelineExtracts/Tunnel.webp'
+//RESERVE
+import Reserve3D from '../Maps/Assets/Reserve/Re3mrReserveCardinalNorthWikiVer.webp'
+import Reserve2D from '../Maps/Assets/Reserve/JindouzReserve_v1_2dmap.webp'
+import Reserve2DUnderground from '../Maps/Assets/Reserve/ReserveExpandedUnderground.webp'
+import ReserveIngame from '../Maps/Assets/Reserve/Reserve_Map_Translated.webp'
+import ReserveArmoredTrain from '../Maps/Assets/Reserve/ReserveExtracts/Armored_train_3.webp'
+import Bunker_hermetic_door from '../Maps/Assets/Reserve/ReserveExtracts/Bunker_hermetic_door.webp'
+import CP_Fence from '../Maps/Assets/Reserve/ReserveExtracts/CP_Fence.webp'
+import Cliff_descent_ from '../Maps/Assets/Reserve/ReserveExtracts/Cliff_descent_%28fence_behind_weather_dome%29.webp'
+import D2_Extract from '../Maps/Assets/Reserve/ReserveExtracts/D2_Extract.webp'
+import Depot_hermetic_door from '../Maps/Assets/Reserve/ReserveExtracts/Depot_hermetic_door.webp'
+import Heating_Pipe from '../Maps/Assets/Reserve/ReserveExtracts/Heating_Pipe.webp'
+import Hole_in_fence_by_the_mountains_ from '../Maps/Assets/Reserve/ReserveExtracts/Hole_in_fence_by_the_mountains_%28Northwest_Corner_of_map%29.webp'
+import Scav_lands from '../Maps/Assets/Reserve/ReserveExtracts/Scav_lands.webp'
+import Sewer_manhole from '../Maps/Assets/Reserve/ReserveExtracts/Sewer_manhole.webp'
+//STREETS
+import Streets3D from '../Maps/Assets/StreetsOfTarkov/StreetsOfTarkov3DMapByRE3MR.webp'
+import Streets2D from '../Maps/Assets/StreetsOfTarkov/StreetsOfTarkov2DMapByJindouz.webp'
+import Streets2D2 from '../Maps/Assets/StreetsOfTarkov/StreetsOfTarkovByxTycho.webp'
+import StreetsBasement from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/BasementDescentExtraction.webp'
+import EntranceToCatacombsExtraction from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/EntranceToCatacombsExtraction.webp'
+import Cardinal_parking from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/Cardinal_parking.webp'
+import CollapsedCraneExtraction from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/CollapsedCraneExtraction.webp'
+import CourtyardExtraction from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/CourtyardExtraction.webp'
+import StreetsCrashSiteExtract from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/StreetsCrashSiteExtract.webp'
+import DamagedHouseExtraction from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/DamagedHouseExtraction.webp'
+import Expo_exfil from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/Expo_exfil.webp'
+import KlimovStreetExtraction from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/KlimovStreetExtraction.webp'
+import Klimov_trading_exfil from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/Klimov_trading_exfil.webp'
+import Near_arch_exfil from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/Near_arch_exfil.webp'
+import StreetsPinewoodBasementExtract from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/StreetsPinewoodBasementExtract.webp'
+import PrimorskyAveTaxiV from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/PrimorskyAveTaxiV-ExExtraction.webp'
+import SewerExtraction from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/SewerExtraction.webp'
+import SewerRiverExtraction from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/SewerRiverExtraction.webp'
+import StreetsStylobateElevatorExtract from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/StreetsStylobateElevatorExtract.webp'
+import VentilationShaftExtraction from '../Maps/Assets/StreetsOfTarkov/StreetExtractions/VentilationShaftExtraction.webp'
 
 export const MAPS_GROUND_ZERO = [
     { id: 'gz', mapName: 'Ground Zero 2D', src: GroundZero, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
@@ -212,4 +268,94 @@ export const WOODS_EXTRACTS = [
     { id: 'ws', src: UN_Road, name: 'UN Roadblock', faction: 'All', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
     { id: 'ws', src: ZB14, name: 'ZB-014', faction: 'All', alwaysAvaiable: false, singleUse: false, requirements: `Green flares = Open + ZB-014 key`, notes: '-' },
     { id: 'ws', src: ZB16, name: 'ZB-016', faction: 'PMC', alwaysAvaiable: false, singleUse: false, requirements: `Green flares = Open`, notes: '-' },
+]
+
+export const MAPS_SHORELINE = [
+    { id: 'sh', mapName: 'Shoreline 3D Map Not yet updated for the latest expansion', src: Shoreline3D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'sh', mapName: 'Shoreline 3D Map Health Resort', src: ShorelineResort, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'sh', mapName: 'Shoreline 2D Map', src: Shoreline2D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'sh', mapName: 'Shoreline Isometric Map Health Resort', src: ShorelineIsometric, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'sh', mapName: 'Shoreline Ingame Map - North bottom', src: ShorelineIngame, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'sh', mapName: 'Shoreline Ingame Map Health Resort - North bottom', src: ShorelineIngameResort, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+]
+
+export const SHORELINE_EXTRACTS = [
+    { id: 'sh', src: ShorelineAdminBasement, name: 'Admin Basement', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: '-', notes: '-' },
+    {
+        id: 'sh', src: Shoreline_Climber, name: `Climber's Trail`, faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `Red Rebel ice pick + Paracord + No armor vest equipped`, notes: `-`
+    },
+    { id: 'sh', src: Rwing_Gym_Entrance, name: 'East Wing Gym Entrance', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: '-', notes: '-' },
+    { id: 'sh', src: Lighthouse, name: 'Lighthouse', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'sh', src: South_Fence_Passage, name: 'Old Bunker', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'sh', src: Path_to_Lighthouse, name: 'Path to Lighthouse', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'sh', src: Pier_Boat, name: 'Pier Boat', faction: 'PMC', alwaysAvaiable: false, singleUse: false, requirements: `Green flare = Open`, notes: '-' },
+    { id: 'sh', src: Road_at_Railbridge, name: 'Railway Bridge', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'sh', src: Road_To_Customs, name: 'Road to Customs', faction: 'All', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    {
+        id: 'sh', src: Shoreline_Road_to_North_V, name: 'Road to North V-Ex', faction: 'PMC', alwaysAvaiable: true, singleUse: true, requirements: `5000 RUB per player Maxium of 5 players`, notes: `The fee amount is influenced by your Scav karma.
+    There are border snipers beyond the vehicle.` },
+    { id: 'sh', src: Ruined_Road, name: 'Ruined Road', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'sh', src: ShorelineSmuggler, name: `Smuggler's Path (Co-op)`, faction: 'All', alwaysAvaiable: true, singleUse: false, requirements: `Scav + PMC`, notes: '-' },
+    { id: 'sh', src: Tunnel, name: 'Tunnel', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+]
+
+export const MAPS_RESERVE = [
+    { id: 're', mapName: 'Reserve 3D Map', src: Reserve3D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 're', mapName: 'Reserve 2D Map', src: Reserve2D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 're', mapName: 'Reserve 2D Underground Map', src: Reserve2DUnderground, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 're', mapName: 'Reserve Ingame', src: ReserveIngame, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+]
+
+export const RESERVE_EXTRACTS = [
+    {
+        id: 're', src: ReserveArmoredTrain, name: 'Armored Train', faction: 'All', alwaysAvaiable: false, singleUse: true, requirements: '-', notes: `Arrives between 20 and 15 minutes left in the raid.
+    Honks twice on arrival.
+    Stays for 7 min.
+    Honks once 1 min before departure.
+    Honks twice on closing doors. Scav Raiders may spawn at the train yard around the time of arrival.` },
+    {
+        id: 're', src: Bunker_hermetic_door, name: `Bunker Hermetic Door`, faction: 'All', alwaysAvaiable: true, singleUse: false, requirements: `Activate the lever in the shack west of the white pawn barracks.`, notes: `The activation lasts for 4 minutes and a siren wails for the duration. Activating the lever has a chance to make some Scav Raiders spawn at the train yard.`
+    },
+    { id: 're', src: CP_Fence, name: 'Checkpoint Fence', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: '-', notes: '-' },
+    {
+        id: 're', src: Cliff_descent_, name: 'Cliff Descent', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `Red Rebel ice pick
+    Paracord
+    No armor vest equipped`, notes: '-'
+    },
+    {
+        id: 're', src: D2_Extract, name: 'D-2', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `1.Turn on power with a lever in the command part of the underground bunker system
+    2.Press the button on the wall next to the sliding door`, notes: 'Activating the lever has the chance to make some Scav Raiders spawn in the command part of the bunker.'
+    },
+    { id: 're', src: Depot_hermetic_door, name: 'Depot Hermetic Door', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 're', src: Heating_Pipe, name: 'Heating Pipe', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 're', src: Hole_in_fence_by_the_mountains_, name: 'Hole in the Wall by the Mountains', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 're', src: Scav_lands, name: 'Scav Lands (Co-Op)', faction: 'All', alwaysAvaiable: true, singleUse: false, requirements: `Scav + PMC`, notes: '-' },
+    { id: 're', src: Sewer_manhole, name: 'Sewer Manhole', faction: 'All', alwaysAvaiable: true, singleUse: false, requirements: `No backpack equipped`, notes: '-' },
+]
+
+export const MAPS_STREETS = [
+    { id: 'st', mapName: 'Streets 3D Map', src: Streets3D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'st', mapName: 'Streets 2D Map', src: Streets2D, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+    { id: 'st', mapName: 'Streets 2D Map', src: Streets2D2, description: 'The business center of Tarkov. This is where TerraGroup was headquartered. This is where it all began.' },
+]
+
+export const STREETS_EXTRACTS = [
+    { id: 'st', src: StreetsBasement, name: 'Basement Descent', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: '-', notes: '-' },
+    { id: 'st', src: EntranceToCatacombsExtraction, name: 'Entrance to Catacombs', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'st', src: Cardinal_parking, name: 'Cardinal Apartment Complex Parking', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'st', src: CollapsedCraneExtraction, name: 'Collapsed Crane', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'st', src: CourtyardExtraction, name: 'Courtyard', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `Green flare = Open`, notes: '-' },
+    { id: 'st', src: StreetsCrashSiteExtract, name: 'Crash Site', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'st', src: DamagedHouseExtraction, name: 'Damaged House', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'st', src: Expo_exfil, name: 'Expo Checkpoint', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'st', src: KlimovStreetExtraction, name: 'Klimov Street', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `Shoot a green flare into the sky while inside the signal flare area. If the flare doesn't reach a certain height, the extraction won't open. Only one person amongst a lobby-made group needs to shoot a flare to open the extraction for all members of the group.`, notes: 'Upon entering the signal flare area, a notification will pop up in the bottom right corner of the screen' },
+    { id: 'st', src: Klimov_trading_exfil, name: 'Klimov Shopping Mall Exfil', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: 'On the 1st floor of the eastern staircase in the Klimov shopping mall.' },
+    { id: 'st', src: Near_arch_exfil, name: 'Near Kamchatskaya Arch', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: 'In the courtyard of the museum building.' },
+    { id: 'st', src: StreetsPinewoodBasementExtract, name: 'Pinewood Basement (Co-Op)', faction: 'All', alwaysAvaiable: true, singleUse: false, requirements: `Scav + PMC`, notes: 'It the northeastern staircase of the Pinewood hotel.' },
+    { id: 'st', src: PrimorskyAveTaxiV, name: 'Primorsky Ave Taxi V-Ex', faction: 'PMC', alwaysAvaiable: false, singleUse: true, requirements: `5000 RUB per player Maxium of 4 players`, notes: `The fee amount is influenced by your Scav karma.
+    There are border snipers beyond the vehicle.` },
+    { id: 'st', src: SewerExtraction, name: 'Sewer Manhole', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'st', src: SewerRiverExtraction, name: 'Sewer River', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
+    { id: 'st', src: StreetsStylobateElevatorExtract, name: 'Stylobate Building Elevator', faction: 'PMC', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: 'Behind the bar on the 3rd floor of the Beluga restaurant.' },
+    { id: 'st', src: VentilationShaftExtraction, name: 'Ventilation Shaft', faction: 'Scav', alwaysAvaiable: true, singleUse: false, requirements: `-`, notes: '-' },
 ]

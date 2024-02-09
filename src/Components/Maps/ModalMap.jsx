@@ -15,7 +15,7 @@ import {
   TableRow,
 } from "@nextui-org/react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import { CUSTOMS_EXTRACTS, FACTORY_EXTRACTS, GROUND_ZERO_EXTRACTS, INTERCHANGE_EXTRACTS, WOODS_EXTRACTS } from "./constants";
+import { CUSTOMS_EXTRACTS, FACTORY_EXTRACTS, GROUND_ZERO_EXTRACTS, INTERCHANGE_EXTRACTS, RESERVE_EXTRACTS, SHORELINE_EXTRACTS, STREETS_EXTRACTS, WOODS_EXTRACTS } from "./constants";
 import { useEffect, useState } from "react";
 import { MdDone } from "react-icons/md";
 import { TiDelete } from "react-icons/ti";
@@ -26,18 +26,23 @@ function ModalMap(props) {
   }, [props.selectedId]);
 
   function handleMaps() {
-    debugger;
     switch (props.selectedId) {
       case "gz":
         return GROUND_ZERO_EXTRACTS;
-        case "ft":
+      case "ft":
         return FACTORY_EXTRACTS;
-        case "cs":
+      case "cs":
         return CUSTOMS_EXTRACTS;
-        case "it":
+      case "it":
         return INTERCHANGE_EXTRACTS;
-        case "ws":
+      case "ws":
         return WOODS_EXTRACTS;
+      case "sh":
+        return SHORELINE_EXTRACTS;
+      case "re":
+        return RESERVE_EXTRACTS;
+      case "st":
+        return STREETS_EXTRACTS;
 
       default:
         return [];
@@ -47,13 +52,7 @@ function ModalMap(props) {
   console.log(selectedMap);
   return (
     <>
-      <Modal
-        className="!min-w-[1100px]"
-        scrollBehavior="inside"
-        size="full"
-        isOpen={props.isOpen}
-        onOpenChange={props.onOpenChange}
-      >
+      <Modal scrollBehavior="inside" size="5xl" isOpen={props.isOpen} onOpenChange={props.onOpenChange}>
         <ModalContent>
           {(onClose) => (
             <>
@@ -62,7 +61,7 @@ function ModalMap(props) {
                 <div className="flex flex-wrap">
                   <TransformWrapper>
                     <TransformComponent>
-                      <img src={props.selectedSrc} alt="test" style={{ maxWidth: 700, minHeight: 500 }} />
+                      <img src={props.selectedSrc} alt="test" style={{ maxWidth: 900, minHeight: 500 }} />
                     </TransformComponent>
                   </TransformWrapper>
                   <Table className="max-w-[1000px]" isStriped aria-label="Example static collection table">
@@ -80,7 +79,7 @@ function ModalMap(props) {
                         selectedMap.map((map, index) => (
                           <TableRow key={index}>
                             <TableCell>
-                              <Image className="hover:scale-125" src={map.src} widh={300} />
+                              <Image className="hover:scale-125" src={map.src} width={props.selectedId === "cs" || props.selectedId === "sh" || props.selectedId === "re" ? 300 : 1000} />
                             </TableCell>
                             <TableCell>{map.name}</TableCell>
                             <TableCell>{map.faction}</TableCell>
