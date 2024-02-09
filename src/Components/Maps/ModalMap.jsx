@@ -1,6 +1,5 @@
 import {
   Button,
-  Divider,
   Image,
   Modal,
   ModalBody,
@@ -13,6 +12,7 @@ import {
   TableColumn,
   TableHeader,
   TableRow,
+  Tooltip,
 } from "@nextui-org/react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import {
@@ -26,9 +26,12 @@ import {
   STREETS_EXTRACTS,
   WOODS_EXTRACTS,
 } from "./constants";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MdDone } from "react-icons/md";
 import { TiDelete } from "react-icons/ti";
+import { BiSolidZoomIn } from "react-icons/bi";
+import { BiSolidZoomOut } from "react-icons/bi";
+import { GrPowerReset } from "react-icons/gr";
 
 function ModalMap(props) {
   useEffect(() => {
@@ -70,11 +73,41 @@ function ModalMap(props) {
             <>
               <ModalHeader className="flex flex-col gap-1">{props.selectedMap}</ModalHeader>
               <ModalBody>
-                <div className="flex flex-wrap">
-                  <TransformWrapper>
-                    <TransformComponent>
-                      <img src={props.selectedSrc} alt="test" style={{ maxWidth: 900, minHeight: 500 }} />
-                    </TransformComponent>
+                <div className="flex flex-wrap place-content-center">
+                  <TransformWrapper initialScale={1} initialPositionX={200} initialPositionY={100}>
+                    {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
+                      <React.Fragment>
+                        <div className="flex gap-5 flex-wrap">
+                          <Tooltip content="Zoom IN">
+                            <Button
+                              variant="faded"
+                              color="warning"
+                              startContent={<BiSolidZoomIn className="text-large" />}
+                              onClick={() => zoomIn()}
+                            />
+                          </Tooltip>
+                          <Tooltip content="Zoom OUT">
+                            <Button
+                              variant="faded"
+                              color="warning"
+                              startContent={<BiSolidZoomOut className="text-large" />}
+                              onClick={() => zoomOut()}
+                            />
+                          </Tooltip>
+                          <Tooltip content="Reset">
+                            <Button
+                              variant="faded"
+                              color="warning"
+                              startContent={<GrPowerReset className="text-large" />}
+                              onClick={() => resetTransform()}
+                            />
+                          </Tooltip>
+                        </div>
+                        <TransformComponent>
+                          <img src={props.selectedSrc} alt="test" />
+                        </TransformComponent>
+                      </React.Fragment>
+                    )}
                   </TransformWrapper>
                   <Table className="max-w-[1000px]" isStriped aria-label="Example static collection table">
                     <TableHeader>
